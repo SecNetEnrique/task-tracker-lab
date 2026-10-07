@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>My Task Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="card">
+    <p class="eyebrow">A tiny project for your first deployment</p>
+    <h1>My Task Tracker</h1>
+    <p class="intro">Add a task, check it off, and come back to it later.</p>
+    <form id="task-form">
+      <label class="sr-only" for="task-input">New task</label>
+      <input id="task-input" maxlength="120" placeholder="What do you need to do?" required>
+      <button type="submit">Add task</button>
+    </form>
+    <p id="summary" class="summary" aria-live="polite"></p>
+    <ul id="task-list" aria-label="Tasks"></ul>
+    <button id="clear-done" class="secondary" type="button">Clear completed</button>
+    <p class="note">Your tasks are saved in this browser on this device.</p>
+  </main>
+  <script src="app.js"></script>
+</body>
+</html>
